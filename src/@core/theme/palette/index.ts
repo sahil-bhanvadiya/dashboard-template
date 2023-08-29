@@ -4,15 +4,15 @@ import { ThemeColor } from 'src/@core/layouts/types'
 
 const DefaultPalette = (mode: PaletteMode, themeColor: ThemeColor) => {
   // ** Vars
-  const lightColor = '58, 53, 65'
-  const darkColor = '231, 227, 252'
+  const lightColor = '52, 64, 63'
+  const darkColor = '227, 250, 248'
   const mainColor = mode === 'light' ? lightColor : darkColor
 
   const primaryGradient = () => {
     if (themeColor === 'primary') {
-      return '#C6A7FE'
+      return '#4DB6AC'
     } else if (themeColor === 'secondary') {
-      return '#9C9FA4'
+      return '#4DB6AC'
     } else if (themeColor === 'success') {
       return '#93DD5C'
     } else if (themeColor === 'error') {
@@ -36,15 +36,15 @@ const DefaultPalette = (mode: PaletteMode, themeColor: ThemeColor) => {
     },
     mode: mode,
     primary: {
-      light: '#9E69FD',
-      main: '#9155FD',
-      dark: '#804BDF',
+      light: '#80CBC4',
+      main: '#26A69A',
+      dark: '#00796B',
       contrastText: '#FFF'
     },
     secondary: {
-      light: '#9C9FA4',
-      main: '#8A8D93',
-      dark: '#777B82',
+      light: '#80CBC4',
+      main: '#26A69A',
+      dark: '#00796B',
       contrastText: '#FFF'
     },
     success: {
@@ -71,39 +71,23 @@ const DefaultPalette = (mode: PaletteMode, themeColor: ThemeColor) => {
       dark: '#139CE0',
       contrastText: '#FFF'
     },
-    grey: {
-      50: '#FAFAFA',
-      100: '#F5F5F5',
-      200: '#EEEEEE',
-      300: '#E0E0E0',
-      400: '#BDBDBD',
-      500: '#9E9E9E',
-      600: '#757575',
-      700: '#616161',
-      800: '#424242',
-      900: '#212121',
-      A100: '#D5D5D5',
-      A200: '#AAAAAA',
-      A400: '#616161',
-      A700: '#303030'
-    },
     text: {
-      primary: `rgba(${mainColor}, 0.87)`,
-      secondary: `rgba(${mainColor}, 0.68)`,
-      disabled: `rgba(${mainColor}, 0.38)`
+      primary: `rgba(${mainColor}, 0.90)`,
+      secondary: `rgba(${mainColor}, 0.72)`,
+      disabled: `rgba(${mainColor}, 0.40)`
     },
-    divider: `rgba(${mainColor}, 0.12)`,
+    divider: `rgba(${mainColor}, 0.11)`,
     background: {
-      paper: mode === 'light' ? '#FFF' : '#312D4B',
-      default: mode === 'light' ? '#F4F5FA' : '#28243D'
+      paper: mode === 'light' ? '#FFF' : '#2d4a44',
+      default: mode === 'light' ? '#f7fcfb' : '#203631'
     },
     action: {
-      active: `rgba(${mainColor}, 0.54)`,
-      hover: `rgba(${mainColor}, 0.04)`,
-      selected: `rgba(${mainColor}, 0.08)`,
-      disabled: `rgba(${mainColor}, 0.3)`,
-      disabledBackground: `rgba(${mainColor}, 0.18)`,
-      focus: `rgba(${mainColor}, 0.12)`
+      active: `rgba(${mainColor}, 0.55)`,
+      hover: `rgba(${mainColor}, 0.05)`,
+      selected: `rgba(${mainColor}, 0.10)`,
+      disabled: `rgba(${mainColor}, 0.4)`,
+      disabledBackground: `rgba(${mainColor}, 0.20)`,
+      focus: `rgba(${mainColor}, 0.14)`
     }
   }
 }
