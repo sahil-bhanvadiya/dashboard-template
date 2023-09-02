@@ -2,6 +2,8 @@
 
 Welcome to the future of web application development! Our Next.js Admin Dashboard Template is a powerhouse of innovation, designed to make your life as a developer smoother, more efficient, and incredibly stylish.
 
+[Live demo here!](https://dashboard-template-nine.vercel.app/)
+
 
 ## 🌟 Features That Shine:
 
