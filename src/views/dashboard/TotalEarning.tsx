@@ -27,30 +27,30 @@ interface DataType {
 
 const data: DataType[] = [
   {
-    progress: 75,
+    progress: 95,
     imgHeight: 20,
-    title: 'Zipcar',
+    title: 'Yipcar',
     color: 'primary',
-    amount: '$24,895.65',
-    subtitle: 'Vuejs, React & HTML',
+    amount: '$42,142.76',
+    subtitle: 'React & Next.js',
     imgSrc: '/images/cards/logo-zipcar.png'
   },
   {
-    progress: 50,
+    progress: 40,
     color: 'info',
     imgHeight: 27,
-    title: 'Bitbank',
-    amount: '$8,650.20',
-    subtitle: 'Sketch, Figma & XD',
+    title: 'Bytebank',
+    amount: '$10,346.00',
+    subtitle: 'Cyber Security',
     imgSrc: '/images/cards/logo-bitbank.png'
   },
   {
-    progress: 20,
+    progress: 10,
     imgHeight: 20,
-    title: 'Aviato',
+    title: 'Avin-ato',
     color: 'secondary',
-    amount: '$1,245.80',
-    subtitle: 'HTML & Angular',
+    amount: '$3,482.10',
+    subtitle: 'Svelte',
     imgSrc: '/images/cards/logo-aviato.png'
   }
 ]
@@ -70,18 +70,18 @@ const TotalEarning = () => {
       <CardContent sx={{ pt: theme => `${theme.spacing(2.25)} !important` }}>
         <Box sx={{ mb: 1.5, display: 'flex', alignItems: 'center' }}>
           <Typography variant='h4' sx={{ fontWeight: 600, fontSize: '2.125rem !important' }}>
-            $24,895
+            $58,828
           </Typography>
           <Box sx={{ display: 'flex', alignItems: 'center', color: 'success.main' }}>
             <MenuUp sx={{ fontSize: '1.875rem', verticalAlign: 'middle' }} />
             <Typography variant='body2' sx={{ fontWeight: 600, color: 'success.main' }}>
-              10%
+              20%
             </Typography>
           </Box>
         </Box>
 
         <Typography component='p' variant='caption' sx={{ mb: 10 }}>
-          Compared to $84,325 last year
+          Compared to $104,325 last year
         </Typography>
 
         {data.map((item: DataType, index: number) => {
